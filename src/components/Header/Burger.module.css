@@ -1,0 +1,65 @@
+.Burger {
+  display: block;
+  position: relative;
+  left: 0;
+  z-index: 3;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: left 0.5s;
+  margin-right: 10px;
+}
+
+.Line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+.Line:first-child {
+  transition-delay: 0.15s;
+}
+
+.Line:nth-child(2) {
+  margin-top: 6px;
+}
+
+.Line:nth-child(3) {
+  margin-top: -3px;
+}
+
+.Line:last-child {
+  margin-top: 6px;
+  transition-delay: 0.15s;
+}
+
+.Open > .Line:first-child {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.Open > .Line:nth-child(2) {
+  transform: rotate(45deg);
+  transition-delay: 0.3s;
+}
+
+.Open > .Line:nth-child(3) {
+  transform: rotate(-45deg);
+  transition-delay: 0.3s;
+}
+
+.Open > .Line:last-child {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+@media (max-width: 1170px) {
+  .Burger.Open {
+    left: 200px;
+  }
+
+  .Open > .Line {
+    background-color: rgb(0, 0, 0);
+  }
+}

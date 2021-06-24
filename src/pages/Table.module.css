@@ -1,0 +1,10 @@
+.Table {
+  margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Table td,
+.Table tr {
+  text-align: center;
+}

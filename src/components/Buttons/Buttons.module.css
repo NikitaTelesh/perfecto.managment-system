@@ -1,0 +1,80 @@
+.Button {
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 87px;
+  min-height: 38px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.15s;
+  margin: 0 5px;
+}
+
+.Button:active {
+  transform: scale(0.95);
+}
+
+.BlueButton {
+  background-color: #0275d8;
+}
+
+.BlueButton:hover {
+  box-shadow: 0 0 5px 0 #0275d8;
+}
+
+.YellowButton {
+  background-color: #f0ad4e;
+}
+
+.YellowButton:hover {
+  box-shadow: 0 0 5px 0 #f0ad4e;
+}
+
+.RedButton {
+  background-color: #d9534f;
+}
+
+.RedButton:hover {
+  box-shadow: 0 0 5px 0 #d9534f;
+}
+
+.WhiteButton {
+  color: #000;
+  border: 1px solid #000;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.WhiteButton:hover {
+  box-shadow: 0 0 5px 0 #b9b9b9;
+}
+
+.GreenButton {
+  background-color: #28a745;
+}
+
+.GreenButton:hover {
+  box-shadow: 0 0 5px 0 #28a745;
+}
+
+.Hide {
+  display: none;
+}
+
+@media (pointer: coarse) {
+  .Button:hover {
+    box-shadow: none;
+  }
+
+  .BlueButton:active {
+    box-shadow: 0 0 5px 0 #0275d8;
+  }
+
+  .YellowButton:active {
+    box-shadow: 0 0 5px 0 #f0ad4e;
+  }
+
+  .RedButton:active {
+    box-shadow: 0 0 5px 0 #d9534f;
+  }
+}

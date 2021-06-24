@@ -1,0 +1,25 @@
+.Container {
+  max-width: 1170px;
+  margin: 15px auto;
+  padding: 0 10px;
+}
+
+.Top {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Title {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1020px) {
+  .Title {
+    font-size: calc(28px + 12 * ((100vw - 320px) / 700));
+  }
+}

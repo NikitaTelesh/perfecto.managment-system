@@ -1,0 +1,27 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgb(40, 83, 133);
+  padding: 10px;
+}
+
+.Title {
+  color: #fff;
+  text-align: center;
+  flex: 1 1 auto;
+  font-size: 32px;
+}
+
+@media (max-width: 1170px) {
+  .Header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .Title {
+    font-size: calc(22px + 10 * ((100vw - 320px) / 850));
+  }
+}
